@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "maparrowremoval",
+  "version": "${version}",
+  "name": "MapArrowRemoval",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/maparrowremoval/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.Ciptoprolol.maparrowremoval.client.MaparrowremovalDataGenerator"
+    ],
+    "client": [
+      "org.Ciptoprolol.maparrowremoval.client.MaparrowremovalClient"
+    ],
+    "main": [
+      "org.Ciptoprolol.maparrowremoval.Maparrowremoval"
+    ]
+  },
+  "mixins": [
+    "maparrowremoval.mixins.json",
+    {
+      "config": "maparrowremoval.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
