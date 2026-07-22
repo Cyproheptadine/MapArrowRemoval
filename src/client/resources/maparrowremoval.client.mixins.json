@@ -4,6 +4,7 @@
   "package": "org.Ciptoprolol.maparrowremoval.mixin.client",
   "compatibilityLevel": "JAVA_25",
   "client": [
+    "MapRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
